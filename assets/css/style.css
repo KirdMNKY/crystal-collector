@@ -1,0 +1,29 @@
+body {
+    background-image: url("../images/the-legend-of-zelda-background-full-hd-1080p-295182.jpg");
+    background-repeat: repeat;
+}
+.instructions {
+
+}
+
+.guesses {
+
+}
+
+.winLose {
+
+}
+
+.crystals div {
+    padding: 10px;
+    float: left;
+}
+
+img {
+    width: 65%;
+}
+
+
+.score {
+
+}
