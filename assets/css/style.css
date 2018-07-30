@@ -2,6 +2,16 @@ body {
     background-image: url("../images/the-legend-of-zelda-background-full-hd-1080p-295182.jpg");
     background-repeat: repeat;
 }
+
+@font-face {
+    font-family: "zelda";
+    src:url("fonts/zeldadxt.ttf");
+}
+
+  .title {
+      font-family: zelda, fantasy, sans-serif;
+  }
+
 .instructions {
 
 }
@@ -14,9 +24,17 @@ body {
 
 }
 
+.total {
+    padding-top: 15px;
+}
+
 .crystals div {
     padding: 10px;
     float: left;
+}
+
+#crystals {
+    border: 5px solid bisque;
 }
 
 img {
