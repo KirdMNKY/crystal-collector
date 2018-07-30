@@ -13,22 +13,22 @@ var crystal1Value = 0;
 var crystal2Value = 0;
 var crystal3Value = 0;
 var crystal4Value = 0;
-var winSound = new Audio();
-winSound.src = "..\sounds/WW_Fanfare_Smalll.wav";
-var loseSound = new Audio();
-loseSound.src = "..\sounds\zelda_oot_gameover.mp3";
-var rupeeSound = new Audio("..\sounds/ZSS_Rupee_Blue.wav");
+// var winSound = new Audio();
+// winSound.src = "../sounds/WW_Fanfare_Small.wav";
+// var loseSound = new Audio();
+// loseSound.src = "../sounds/zelda_oot_gameover.mp3";
+// var rupeeSound = new Audio("../sounds/ZSS_Rupee_Blue.wav");
 
 
 
 $(document).ready(function() {
     crystalCollectors();
     
-
     function crystalCollectors(){
         //reset score
         score = 0;
         $("#score").text(score);
+        console.log(score);
 
         //Generate Random Value
         randValue = Math.ceil(Math.random()*101 + 19);
@@ -36,9 +36,13 @@ $(document).ready(function() {
 
         //Generate Random Crystal Values
         crystal1Value = Math.ceil(Math.random()*12);
+        $("#value1").text(crystal1Value);
         crystal2Value = Math.ceil(Math.random()*12);
+        $("#value2").text(crystal2Value);
         crystal3Value = Math.ceil(Math.random()*12);
+        $("#value3").text(crystal3Value);
         crystal4Value = Math.ceil(Math.random()*12);
+        $("#value4").text(crystal4Value);
 
         // var showRand = document.getElementById("randNum");
         // var showRand = $("#randNum");
@@ -57,45 +61,42 @@ $(document).ready(function() {
         $("#crystal1").on("click", function(){
             $("#dispWinLose").text("");
             score += crystal1Value;
-            rupeeSound.play();
+            //rupeeSound.play();
             $("#score").text(score);
-            console.log(score);
-            checkWin(score);
+            checkWin();
         })
 
         $("#crystal2").on("click", function(){
             $("#dispWinLose").text("");
             score += crystal2Value;
-            rupeeSound.play();
+            //rupeeSound.play();
             $("#score").text(score);
-            console.log(score);
-            checkWin(score);
+            checkWin();
         })
 
         $("#crystal3").on("click", function(){
             $("#dispWinLose").text("");
             score += crystal3Value;
-            rupeeSound.play();
+            //rupeeSound.play();
             $("#score").text(score);
-            console.log(score);
-            checkWin(score);
+            checkWin();
         })
 
         $("#crystal4").on("click", function(){
             $("#dispWinLose").text("");
             score += crystal4Value;
-            rupeeSound.play();
+            //rupeeSound.play();
             $("#score").text(score);
-            console.log(score);
-            checkWin(score);
+            checkWin();
         })
         
-
-        function checkWin(score){
+    }
+        function checkWin(){
 
             if(score > randValue){
+                alert(randValue);
                 //Play Lose Sound
-                loseSound.play();
+                //loseSound.play();
                 //Display You Lose!
                 numLosses++;
                 $("#losses").text(numLosses);
@@ -104,8 +105,9 @@ $(document).ready(function() {
                 crystalCollectors();
             
             } else if(score === randValue){
+                alert(randValue);
                 //Play Win Sound
-                winSound.play();
+                //winSound.play();
                 //Display You Win!
                 numWins++;
                 $("#wins").text(numWins);
@@ -114,8 +116,8 @@ $(document).ready(function() {
                 crystalCollectors();
             }
         }
-    }
+    })
 
 
-})
+
 
