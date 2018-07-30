@@ -1,11 +1,14 @@
 body {
     background-image: url("../images/the-legend-of-zelda-background-full-hd-1080p-295182.jpg");
+    /*image location https://wallpapermemory.com/295182*/
     background-repeat: repeat;
 }
 
 @font-face {
     font-family: "zelda";
-    src:url("fonts/zeldadxt.ttf");
+    src:url("../fonts/Triforce.ttf");
+    font-family: "bodyText";
+    src: url("../fonts/zeldadxt.ttf");
 }
 
   .title {
@@ -13,7 +16,8 @@ body {
   }
 
 .instructions {
-
+    font-family: bodyText, fantasy, sans-serif;
+    font-weight: bold;
 }
 
 .guesses {
@@ -21,7 +25,7 @@ body {
 }
 
 .winLose {
-
+    font-family: zelda, fantasy, sans-serif;
 }
 
 .total {

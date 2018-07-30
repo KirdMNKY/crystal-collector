@@ -119,13 +119,13 @@ $(document).ready(function() {
 
                 //Generate Random Crystal Values
                 crystal1Value = Math.ceil(Math.random()*12);
-                $("#value1").text(crystal1Value);
+                //$("#value1").text(crystal1Value);
                 crystal2Value = Math.ceil(Math.random()*12);
-                $("#value2").text(crystal2Value);
+                // $("#value2").text(crystal2Value);
                 crystal3Value = Math.ceil(Math.random()*12);
-                $("#value3").text(crystal3Value);
+                // $("#value3").text(crystal3Value);
                 crystal4Value = Math.ceil(Math.random()*12);
-                $("#value4").text(crystal4Value);
+                // $("#value4").text(crystal4Value);
 
                 // var showRand = document.getElementById("randNum");
                 // var showRand = $("#randNum");
@@ -161,13 +161,13 @@ $(document).ready(function() {
 
                 //Generate Random Crystal Values
                 crystal1Value = Math.ceil(Math.random()*12);
-                $("#value1").text(crystal1Value);
+                // $("#value1").text(crystal1Value);
                 crystal2Value = Math.ceil(Math.random()*12);
-                $("#value2").text(crystal2Value);
+                // $("#value2").text(crystal2Value);
                 crystal3Value = Math.ceil(Math.random()*12);
-                $("#value3").text(crystal3Value);
+                // $("#value3").text(crystal3Value);
                 crystal4Value = Math.ceil(Math.random()*12);
-                $("#value4").text(crystal4Value);
+                // $("#value4").text(crystal4Value);
 
                 // var showRand = document.getElementById("randNum");
                 // var showRand = $("#randNum");
